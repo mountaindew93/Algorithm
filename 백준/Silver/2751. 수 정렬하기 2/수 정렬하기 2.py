@@ -1,0 +1,14 @@
+import sys
+input = sys.stdin.readline 
+
+n = int(input())
+arr = []
+
+for i in range(n):
+    arr.append(int(input()))
+
+arr = list(set(arr))
+arr.sort()
+
+for i in arr:
+    print(i)
